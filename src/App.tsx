@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     /*fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
-      .then(response => setUsers(response))*/
+      .then(response => setUsers(response))ciao*/
       axios.get('https://jsonplaceholder.typicode.com/users')
       .then(response => setUsers(response.data))
   }, []);
